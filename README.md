@@ -1,38 +1,36 @@
 # Portfolio Projects
 
-This repository is a safe portfolio overview of selected private projects.
+Краткое описание нескольких проектов, где я занимался backend-разработкой, интеграциями и автоматизацией. Исходный production-код в этом репозитории не публикуется.
 
-The goal is to show the stack, architecture, and automation tasks without publishing commercial source code or sensitive configuration.
+## Проекты
 
-## Selected Projects
+### VPN backend / automation / metrics
+- backend для активации клиентов и управления VPN-подписками;
+- REST API, модели данных, работа с PostgreSQL и Redis;
+- служебные скрипты для проверок, рутинных операций и сопровождения;
+- health checks, метрики и базовый operational monitoring.
 
-### 1. VPN backend / automation / metrics
-- Python backend for VPN subscription and client activation flows;
-- REST API, JSON, HTTP integrations, database models, admin tools;
-- automation scripts for service checks, deployment routines, and support operations;
-- internal metrics, health checks, and operational monitoring.
+Стек:
+`Python`, `FastAPI`, `SQLAlchemy`, `Alembic`, `PostgreSQL`, `Redis`, `HTTP`, `JSON`, `Bash`
 
-Stack:
-`Python`, `FastAPI`, `SQLAlchemy`, `Alembic`, `PostgreSQL`, `Redis`, `REST API`, `JSON`, `Bash`
+### Telegram Web App для цветочного магазина
+- Web App внутри Telegram для выбора товаров и оформления заказа;
+- связка frontend, bot и backend через webhook/API;
+- промокоды, валидация заказов, админская статистика;
+- работа с ограничениями и сценариями Telegram Web App.
 
-### 2. Telegram Web App for a flower shop
-- Telegram Web App for product selection and order creation;
-- webhook-based bot/backend integration;
-- order flow, promo codes, validation, and admin-side statistics;
-- frontend and backend coordination around Telegram platform constraints.
-
-Stack:
+Стек:
 `JavaScript`, `HTML`, `CSS`, `Telegram Web App`, `HTTP`, `JSON`
 
-### 3. Telegram bot / payments / orders / automation
-- Python bot for collecting orders and processing user flows;
-- payment integrations, order state handling, admin actions, and notifications;
-- automation of routine steps around order intake and support communication.
+### Telegram bot / payments / orders / automation
+- бот для приёма заказов и сопровождения пользовательских сценариев;
+- платежные интеграции, состояния заказов, уведомления, админские действия;
+- автоматизация повторяющихся операций вокруг заказов и поддержки.
 
-Stack:
+Стек:
 `Python`, `aiogram`, `SQLite`, `Telegram Bot API`, `Payments`, `JSON`
 
-## Notes
+## Почему здесь нет исходников
 
-- Full production code for these projects remains private.
-- Public portfolio materials can be added here later as redacted code samples, screenshots, architecture notes, and short case studies.
+- проекты содержат production-логику, интеграции и конфигурацию, которые не стоит выкладывать целиком;
+- этот репозиторий нужен как краткое портфолио по стеку, задачам и типам проектов.
